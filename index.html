@@ -7,7 +7,7 @@
     <link rel="stylesheet" type="text/css" href="css/aos.css">
     <meta charset="utf-8">
     <meta name="viewport" content="width=decive-width, initial-scale=1.0">
-    <script src="jquery-3.4.1.min.js"></script>
+    <!-- <script src="jquery-3.4.1.min.js"></script> -->
     <script src="https://unpkg.com/scrollreveal@4"></script>
     <script>
         ScrollReveal({ reset: true });
@@ -26,14 +26,22 @@
         </div>
         <div class="navOptions">
             <label for="toggle">&#9776;</label>
-            <input type="checkbox" id="toggle"/>
-            <div class="menu">
-                <a class="navButton hvr-bob" href="#showcase">Showcase</a>
-                <a class="navButton hvr-bob" href="#">About</a>
-                <a class="navButton hvr-bob" href="#">Contact</a>
-            </div>
+            <input type="checkbox" id="toggle" />
+            <ul id="top-menu" class="menu">
+                <li class="active">
+                    <a class="navButton" href="#showcase">Showcase</a>
+                </li>
+                <li>
+                    <a class="navButton" href="#about">About</a>
+                </li>
+                <li>
+                    <a class="navButton" href="#contact">Contact</a>
+                </li>
+            </ul>
         </div>
     </nav>
+
+
     <!-- Hero -->
     <section class="heroContainer">
         <div class="textContainer">
@@ -47,20 +55,18 @@
     </section>
 
     <!-- project showcase header -->
-    <div id="showcase" class="headerContain">
+    <section id="showcase" class="headerContain">
         <h1 class="showcaseHeader">PROJECT SHOWCASE</h1>
-    </div>
+    </section>
     <!--showcase -->
     <section class="cardContain">
-        <div data-aos="fade-right" data-aos-offset="100"
-        data-aos-easing="ease-in-sine" class="aolCard">
+        <div data-aos="fade-right" data-aos-offset="100" data-aos-easing="ease-in-sine" class="aolCard">
             <a href="#">
                 <img class="cardPic" src="images/AolCard.svg">
                 <img class="cardPicMobile" src="images/aol mobile.svg">
             </a>
         </div>
-        <div data-aos="fade-left" data-aos-offset="300"
-        data-aos-easing="ease-in-sine" class="cardtextContain1">
+        <div data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine" class="cardtextContain1">
             <div class="cardHeader">Arms of Love: Building a Nonprofit Website</div>
             <div class="showText1">As part of a team, we designed a website from scratch for a local Nonprofit. This
                 design will be implemented for the clients.</div>
@@ -77,21 +83,19 @@
     </section>
 
     <section class="cardContain">
-        <div data-aos="fade-right" data-aos-offset="200"
-        data-aos-easing="ease-in-sine" class="aolCard">
+        <div data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine" class="aolCard">
             <a href="#">
                 <img class="cardPic" src="images/dogger.svg">
                 <img class="cardPicMobile" src="images/dooger mobile.svg">
             </a>
         </div>
-        <div data-aos="fade-left" data-aos-offset="300"
-        data-aos-easing="ease-in-sine" class="cardtextContain2">
+        <div data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine" class="cardtextContain2">
             <div class="cardHeader">Dogger: Microinteractions & Voice Command</div>
             <div class="showText2">A cute micro-interaction paired with voice command input. The idea is to be able
                 to feed your dog while you are away from home. An example of multi-platform modality.</div>
             <div class="button">
                 <a href="#">
-                    <img src="images/Button.svg">
+                    <img class="hvr-grow" src="images/Button.svg">
                 </a>
             </div>
         </div>
@@ -102,21 +106,19 @@
     </section>
 
     <section class="cardContain">
-        <div data-aos="fade-right" data-aos-offset="200"
-        data-aos-easing="ease-in-sine" class="aolCard">
+        <div data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine" class="aolCard">
             <a href="#">
                 <img class="cardPic" src="images/energy.svg">
                 <img class="cardPicMobile" src="images/energy mobile.svg">
             </a>
         </div>
-        <div data-aos="fade-left" data-aos-offset="250"
-        data-aos-easing="ease-in-sine" class="cardtextContain3">
+        <div data-aos="fade-left" data-aos-offset="250" data-aos-easing="ease-in-sine" class="cardtextContain3">
             <div class="cardHeader">Energy.gov: A Redesign</div>
             <div class="showText3">We redesigned the Dept. of Energy’s website to be cleaner, simpler, and easier to
                 use. Check out the process with the button below.</div>
             <div class="button">
                 <a href="#">
-                    <img src="images/Button.svg">
+                    <img class="hvr-grow" src="images/Button.svg">
                 </a>
             </div>
         </div>
@@ -127,66 +129,98 @@
     </section>
 
     <section class="cardContain">
-            <div data-aos="fade-right" data-aos-offset="200"
-            data-aos-easing="ease-in-sine" class="aolCard">
+        <div data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine" class="aolCard">
+            <a href="#">
+                <img class="cardPic" src="images/cargo.svg">
+                <img class="cardPicMobile" src="images/cargo mobile.svg">
+            </a>
+        </div>
+        <div data-aos="fade-left" data-aos-offset="250" data-aos-easing="ease-in-sine" class="cardtextContain4">
+            <div class="cardHeader">CARGO: A New Way to Rideshare.
+            </div>
+            <div class="showText3">CARGO allows for users to rideshare traditionally similar to Uber or Lyft, but now
+                users have an option to have someone transport their personal vehicles to a desired location.
+            </div>
+            <div class="button">
                 <a href="#">
-                    <img class="cardPic" src="images/cargo.svg">
-                    <img class="cardPicMobile" src="images/cargo mobile.svg">
+                    <img class="hvr-grow" src="images/Button.svg">
                 </a>
             </div>
-            <div data-aos="fade-left" data-aos-offset="250"
-            data-aos-easing="ease-in-sine" class="cardtextContain4">
-                <div class="cardHeader">CARGO: A New Way to Rideshare.
-                    </div>
-                <div class="showText3">CARGO allows for users to rideshare traditionally similar to Uber or Lyft, but now users have an option to have someone transport their personal vehicles to a desired location. 
-                    </div>
-                <div class="button">
-                    <a href="#">
-                        <img src="images/Button.svg">
-                    </a>
-                </div>
+        </div>
+    </section>
+
+    <section class="divide">
+        <div class="line"></div>
+    </section>
+
+    <section class="cardContain">
+        <div data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine" class="aolCard">
+            <a href="#">
+                <img class="cardPic" src="images/xplorer.svg">
+                <img class="cardPicMobile" src="images/xplorer mobile.svg">
+            </a>
+        </div>
+        <div data-aos="fade-left" data-aos-offset="250" data-aos-easing="ease-in-sine" class="cardtextContain5">
+            <div class="cardHeader">Xplorer: We’ll Plan Your Trip For You.
             </div>
-        </section>
+            <div class="showText5">Xplorer helps travelers eliminate the hassle of choosing flights, accommodations, and
+                activities. Users fill out surveys, advanced web-scraping techniques search for those preferences, and
+                an AI predicts the 5 best options for the user.
+            </div>
+            <div class="button">
+                <a href="#">
+                    <img class="hvr-grow" src="images/Button.svg">
+                </a>
+            </div>
+        </div>
+    </section>
 
-        <section class="divide">
-                <div class="line"></div>
-            </section>
+    <section class="showDivide">
+        <div class="more">More to Come in the Future!</div>
+        <div class="scrollAlert">
+            <p>(Keep Scrolling)</p>
+            <img data-aos="fade-down" data-aos-easing="linear" data-aos-duration="2000"
+                src="images/Icon awesome-arrow-down.svg">
+        </div>
+        <div id="about"></divid="about">
+    </section>
 
-            <section class="cardContain">
-                    <div data-aos="fade-right" data-aos-offset="200"
-                    data-aos-easing="ease-in-sine" class="aolCard">
-                        <a href="#">
-                            <img class="cardPic" src="images/xplorer.svg">
-                            <img class="cardPicMobile" src="images/xplorer mobile.svg">
-                        </a>
-                    </div>
-                    <div data-aos="fade-left" data-aos-offset="250"
-                    data-aos-easing="ease-in-sine" class="cardtextContain5">
-                        <div class="cardHeader">Xplorer: We’ll Plan Your Trip For You.
-                            </div>
-                        <div class="showText5">Xplorer helps travelers eliminate the hassle of choosing flights,  accommodations, and activities.  Users fill out surveys, advanced web-scraping techniques search for those preferences, and an AI predicts the 5 best options for the user.
-                            </div>
-                        <div class="button">
-                            <a href="#">
-                                <img src="images/Button.svg">
-                            </a>
-                        </div>
-                    </div>
-                </section>
+    <section class="aboutMe">
+        <div class="aboutPicContain">
+            <img src="images/about pic cut.jpg">
+        </div>
+        <div class="aboutTextContain">
+            <h1>About Marcus J. Moraru</h1>
+            <p> Hi there! I am someone who loves learning and teaching myself all kinds of weird stuff. Continuously
+                learning and growing is my passion and my major strength.. I am able to solve most problems that enter
+                my life, and look for help when I cannot do it on my own. Although I have a degree in biology and loved
+                every second of learning about science, I have always been fascinated with technology and design.
+                Tinkering & toying with tech tantalizes my temporal lobes tremendously!</p>
 
+            <p> I decided to start my career in UX when I discovered the need for human centered design. As someone who
+                is naturally empathetic, I love finding out why people do things the way they do. Part of my
+                effectiveness is putting my self into other people’s perspectives and playing from there. I aim to bring
+                my own unique perspectives from my science background, and create a synthesis of good design, art,
+                science, and technology.</p>
 
-
-
-
-
+        </div>
 
 
-                <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-                <script src="js/index.js"></script>
-                <script src="js/aos.js"></script>
-                <script type="text/javascript">
-                    AOS.init();
-                    </script>
+    </section>
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/aos.js"></script>
+    <script type="text/javascript">
+        AOS.init();
+    </script>
 
 </body>
 
